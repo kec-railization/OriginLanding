@@ -1,0 +1,22 @@
+<div id="wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<%= image_tag "logo.png"%>
+				<h2 class="subtitle">Don't let your artifacts get lost in the continuous delivery swamp</h2>
+				<%= form_for :guest , url: welcome_index_path , html: {class: "form-inline signup"} do |f| %>
+				  <div class="form-group">
+				  	<%= f.email_field :email, class: "form-control", placeholder: "Enter Email" %>
+				  </div>
+				  <button type="submit" class="btn btn-theme">Register</button>
+				<% end %>				
+			</div>
+			
+		</div>
+		<div class="row footer-holder">
+			<div class="col-lg-6 col-lg-offset-3">
+					<p class="copyright">Copyright &copy; 2015 - ExeterStudios</p>
+			</div>
+		</div>		
+	</div>
+</div>
