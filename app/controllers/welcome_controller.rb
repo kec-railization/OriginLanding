@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
 		@guest = Guest.new(guest_params)
 		if @guest.save
 			UserMailer.welcome_email(@guest.email).deliver
+			flash[:success] = "You are registered successfully."
 			redirect_to :back
 		else
 			render :index
