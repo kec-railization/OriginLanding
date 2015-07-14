@@ -172,4 +172,7 @@ p.copyright {
 	margin-top: 50px;
 	color: #fff;
 	text-align: center;
-}	
+}
+.body-holder{
+  height: 490px;
+}
